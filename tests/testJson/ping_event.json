@@ -1,0 +1,38 @@
+{
+  "version": "2.0",
+  "routeKey": "ANY /",
+  "rawPath": "/",
+  "rawQueryString": "",
+  "headers": {
+    "content-length": "488",
+    "content-type": "application/json",
+    "host": "r4vwtepcz4.execute-api.us-east-1.amazonaws.com",
+    "user-agent": "Discord-Interactions/1.0 (+https://discord.com)",
+    "x-amzn-trace-id": "Root=1-62e215ac-29718604022a616979254faa",
+    "x-forwarded-for": "35.237.4.214",
+    "x-forwarded-port": "443",
+    "x-forwarded-proto": "https",
+    "x-signature-ed25519": "ec2c0564e9e65180acf7181e33019bb02f7de02ff7e9112b4df50bac8ce5a11c9298111025185d8fdad47d8dde76b387f46d7d867dfcbe04a8598099da27b804",
+    "x-signature-timestamp": "1658983852"
+  },
+  "requestContext": {
+    "accountId": "506134552222",
+    "apiId": "r4vwtepcz4",
+    "domainName": "r4vwtepcz4.execute-api.us-east-1.amazonaws.com",
+    "domainPrefix": "r4vwtepcz4",
+    "http": {
+      "method": "POST",
+      "path": "/",
+      "protocol": "HTTP/1.1",
+      "sourceIp": "35.237.4.214",
+      "userAgent": "Discord-Interactions/1.0 (+https://discord.com)"
+    },
+    "requestId": "V9hS9jsloAMESfg=",
+    "routeKey": "ANY /",
+    "stage": "$default",
+    "time": "28/Jul/2022:04:50:52 +0000",
+    "timeEpoch": 1658983852385
+  },
+  "body": "{\"application_id\":\"987668198658805770\",\"id\":\"1002075648589824060\",\"token\":\"aW50ZXJhY3Rpb246MTAwMjA3NTY0ODU4OTgyNDA2MDo0UlNxUWlDcFNYZ3dRQ3ZIbmMwT2ZYU3FZMVpSRGJteUpmVjBNM2FFdFYzc25HQWZ5SmhMNW1DNTRrN0xOOWdYajF0dXJkbTAzRG5ROFMxOGU0Rlc5VlRsak83U2JvdVh6cXdHYkUzNU9MU3VKaWZBYUJPbjNmTjJtOUxJZzRmWA\",\"type\":1,\"user\":{\"avatar\":\"b7ae3a5016066a4f72a28839e8e54deb\",\"avatar_decoration\":null,\"discriminator\":\"5590\",\"id\":\"268663717120442368\",\"public_flags\":0,\"username\":\"OrinNadiak(Burcin)\"},\"version\":1}",
+  "isBase64Encoded": "False"
+}
