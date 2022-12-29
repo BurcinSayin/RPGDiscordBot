@@ -1,4 +1,4 @@
-Dynamo DB support is deprecated ( data ). Will continue from  sheetdata
+Google Sheets support is deprecated ( data/sheets ). Will continue from  Dynamo DB ( data/dynamodb )
 
 To Build lambda layer
 
