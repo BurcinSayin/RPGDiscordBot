@@ -15,13 +15,6 @@ from utils.discord import InteractionOptionType
 class Char(BaseCommand):
     def __init__(self):
         super().__init__("char", "Character actions")
-        # sheet_auth_file = "../sheet-auth.json"
-        # sheet_auth_path = os.environ.get("SHEET_PATH")
-        # if sheet_auth_path is not None:
-        #     sheet_auth_file = str(sheet_auth_path) + "sheet-auth.json"
-        # gc = gspread.service_account(filename=sheet_auth_file)
-        # settings_sheet = gc.open("Settings")
-        # char_sheet = gc.open("Characters")
         dynamodb = boto3.resource('dynamodb', region_name="us-east-1")
         self.char_db = CharacterData(dynamodb)
         self.user_db = UserData(dynamodb)

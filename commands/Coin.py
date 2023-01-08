@@ -14,13 +14,6 @@ from utils.discord import InteractionOptionType
 class Coin(BaseCommand):
     def __init__(self):
         super().__init__("coin", "Trading coins")
-        # sheet_auth_file = "../sheet-auth.json"
-        # sheet_auth_path = os.environ.get("SHEET_PATH")
-        # if sheet_auth_path is not None:
-        #     sheet_auth_file = str(sheet_auth_path) + "sheet-auth.json"
-        # gc = gspread.service_account(filename=sheet_auth_file)
-        # settings_sheet = gc.open("Settings")
-        # char_sheet = gc.open("Characters")
         dynamodb = boto3.resource('dynamodb', region_name="us-east-1")
         self.char_db = CharacterData(dynamodb)
         self.user_db = UserData(dynamodb)
@@ -85,6 +78,11 @@ class Coin(BaseCommand):
 
         if action_param == "coin_act_give":
             action_display_name = "Coin Give"
+            if coin_source.coins < coin_amount:
+                fields.append({"name": "Param Error", "value": f"{coin_source.name} does not have enough coins"})
+                return_data["embeds"] = [self.generate_embed(action_display_name, fields, 0x89ff0a)]
+                return return_data
+
             coin_source.coins -= coin_amount
             coin_target.coins += coin_amount
             self.char_db.save_data_obj(coin_source)
