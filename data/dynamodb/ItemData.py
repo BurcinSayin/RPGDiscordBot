@@ -9,8 +9,8 @@ class ItemData(BaseData):
     def __init__(self, db):
         super().__init__(db, "items", "name", "S")
 
-    def add_item(self, character_name, weight, cost, desc) -> GlobalItem:
-        to_save = GlobalItem(name=character_name, weight=weight, cost=cost, description=desc)
+    def add_item(self, item_name: str, weight: int, cost: int, desc: str) -> GlobalItem:
+        to_save = GlobalItem(name=item_name, weight=weight, cost=cost, description=desc)
         save_data = asdict(to_save)
 
         self.table.put_item(

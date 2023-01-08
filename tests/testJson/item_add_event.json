@@ -1,0 +1,38 @@
+{
+  "version": "2.0",
+  "routeKey": "ANY /",
+  "rawPath": "/",
+  "rawQueryString": "",
+  "headers": {
+    "content-length": "1195",
+    "content-type": "application/json",
+    "host": "r4vwtepcz4.execute-api.us-east-1.amazonaws.com",
+    "user-agent": "Discord-Interactions/1.0 (+https://discord.com)",
+    "x-amzn-trace-id": "Root=1-63ba9559-64fc43c24a8c66406e3960bd",
+    "x-forwarded-for": "35.237.4.214",
+    "x-forwarded-port": "443",
+    "x-forwarded-proto": "https",
+    "x-signature-ed25519": "4948826f27bac6e51b3c1bf0b510e730f232d8fdd1224104ce05a108a9e0e05baeef81c43ffcecd2828a6da8fd995e7cf68da33476dea145ed0645c7182dcb00",
+    "x-signature-timestamp": "1673172313"
+  },
+  "requestContext": {
+    "accountId": "506134552222",
+    "apiId": "r4vwtepcz4",
+    "domainName": "r4vwtepcz4.execute-api.us-east-1.amazonaws.com",
+    "domainPrefix": "r4vwtepcz4",
+    "http": {
+      "method": "POST",
+      "path": "/",
+      "protocol": "HTTP/1.1",
+      "sourceIp": "35.237.4.214",
+      "userAgent": "Discord-Interactions/1.0 (+https://discord.com)"
+    },
+    "requestId": "eaxF-hibIAMESGg=",
+    "routeKey": "ANY /",
+    "stage": "$default",
+    "time": "08/Jan/2023:10:05:13 +0000",
+    "timeEpoch": 1673172313232
+  },
+  "body": "{\"app_permissions\":\"1071698660929\",\"application_id\":\"987668198658805770\",\"channel_id\":\"987679715445850184\",\"data\":{\"guild_id\":\"987679714846060564\",\"id\":\"1061586211585658981\",\"name\":\"item\",\"options\":[{\"name\":\"action\",\"type\":3,\"value\":\"item_act_add\"},{\"name\":\"item_name\",\"type\":3,\"value\":\"dff\"},{\"name\":\"item_data\",\"type\":3,\"value\":\"1,2,desc\"}],\"type\":1},\"entitlement_sku_ids\":[],\"guild_id\":\"987679714846060564\",\"guild_locale\":\"en-US\",\"id\":\"1061586366833627146\",\"locale\":\"en-US\",\"member\":{\"avatar\":null,\"communication_disabled_until\":null,\"deaf\":false,\"flags\":0,\"is_pending\":false,\"joined_at\":\"2022-06-18T11:26:34.246000+00:00\",\"mute\":false,\"nick\":null,\"pending\":false,\"permissions\":\"4398046511103\",\"premium_since\":null,\"roles\":[\"1010075527635275827\",\"1010075255907287060\"],\"user\":{\"avatar\":\"b7ae3a5016066a4f72a28839e8e54deb\",\"avatar_decoration\":null,\"discriminator\":\"5590\",\"id\":\"268663717120442368\",\"public_flags\":0,\"username\":\"OrinNadiak(Burcin)\"}},\"token\":\"aW50ZXJhY3Rpb246MTA2MTU4NjM2NjgzMzYyNzE0NjpNRHVVWGVzaTlkZ09yRjJFc1BaTVA3d0lrYVZ4OWM3V2pRVUswcHVNTWZIMndLS2VlZDQ0Wkw4NGdBQjRpYlJ1MEN3ZGVCdkdNSmNQWlV5N2hlWGh3WWRjb0tLa0hwVDU3R055Zk5OMW1yZ211NjhQTFp0bVBqeHZYdGV0UnhmSA\",\"type\":2,\"version\":1}",
+  "isBase64Encoded": "False"
+}

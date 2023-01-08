@@ -41,4 +41,4 @@ def add_file(target_zip, src_file, zip_folder):
 
 if __name__ == "__main__":
     create_lambda_bundle()
-    create_layer_bundle()
+    # create_layer_bundle()
